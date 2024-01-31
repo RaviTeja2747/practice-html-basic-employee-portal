@@ -4,20 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding:0;
+            background-color: #87b1b4;
+        }
+
+        header, footer {
+            background-color: #475c5e;
+            color: aliceblue;
+            text-align: center;
+            padding: 2px;
+        }
+
+        .navitem {
+            display: inline;
+            padding: 15px;
+        }
+
+        .navitem a {
+            text-decoration: none;
+            color: azure;
+        }
+
+    </style>
 </head>
 <body>
     <header>
         <h1>Welcome to the Company Employee Portal</h1>
         <nav>
         <ul>
-            <li><a href="#employee-registration">Employee Registration</a></li>
-            <li><a href="#employee-directory">Employee Directory</a></li>
-            <li><a href="#contact-us">Contact US</a></li>
+            <li class="navitem"><a href="#employee-registration">Employee Registration</a></li>
+            <li class="navitem"><a href="#employee-directory">Employee Directory</a></li>
+            <li class="navitem"><a href="#contact-us">Contact US</a></li>
         </ul>
     </nav>
     </header>
 
-    <section id="employee-registration">
+    <section id="employee-registration" class="register-form">
+        
         <form action="POST">
             <label for="name">Name: </label>
             <input type="text" id="name" placeholder="Enter Your Name">
